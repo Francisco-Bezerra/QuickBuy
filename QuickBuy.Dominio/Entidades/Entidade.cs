@@ -25,5 +25,9 @@ namespace QuickBuy.Dominio.Entidades
         {
             mensagemValidacao.Add(mensagem);
         }
+
+        public string ObterMensagensValidacao() {
+            return string.Join(". ", mensagemValidacao);
+        }
     }
 }
